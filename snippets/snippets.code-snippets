@@ -24,17 +24,35 @@
       "body": ["const $1 = style({", "\t$2: $3,", "});"],
       "description": "Creates a style rule with a locally scoped class name."
     },
+    "Vanilla Extract Export Style Variable": {
+      "scope": "javascript, typescript",
+      "prefix": "vesr",
+      "body": ["export const $1 = style({", "\t$2: $3,", "});"],
+      "description": "Creates and exports a style rule with a locally scoped class name."
+    },
     "Vanilla Extract StyleVariants": {
       "scope": "javascript, typescript",
       "prefix": "vsv",
       "body": ["const $1 = styleVariants({", "\t${2:primary}: {", "\t\t$3: $4,", "\t},", "});"],
       "description": "Creates a collection of named style rules."
     },
+    "Vanilla Extract Export StyleVariants": {
+      "scope": "javascript, typescript",
+      "prefix": "vesv",
+      "body": ["export const $1 = styleVariants({", "\t${2:primary}: {", "\t\t$3: $4,", "\t},", "});"],
+      "description": "Creates and exports a collection of named style rules."
+    },
     "Vanilla Extract Keyframes": {
       "scope": "javascript, typescript",
       "prefix": "vke",
       "body": ["const $1 = keyframes({", "\t$2: $3,", "});"],
       "description": "Creates a locally scoped animation name for the defined @keyframes."
+    },
+    "Vanilla Extract Export Keyframes": {
+      "scope": "javascript, typescript",
+      "prefix": "veke",
+      "body": ["export const $1 = keyframes({", "\t$2: $3,", "});"],
+      "description": "Creates and exports a locally scoped animation name for the defined @keyframes."
     },
     "Vanilla Extract Media Queries": {
       "scope": "javascript, typescript",
@@ -59,6 +77,12 @@
       "prefix": "vsc",
       "body": ["const $1 = style([$2, { $3: $4 }]);"],
       "description": "Style composition makes it easy to re-use your styles."
+    },
+    "Vanilla Extract Export Style Composition": {
+      "scope": "javascript, typescript",
+      "prefix": "vesc",
+      "body": ["export const $1 = style([$2, { $3: $4 }]);"],
+      "description": "Creates and exports a style composition that makes it easy to re-use your styles."
     },
   
     //react
