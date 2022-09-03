@@ -16,12 +16,16 @@ After installation of this snippets, add this inside your settings
 | ivk      | Import { keyframes }                 |
 | iva      | import * as styles from './[file].css|
 | vsr      | Create style rule                    |
+| vesr     | Create & export style rule           |
 | vsv      | Create styleVariants                 |
+| vesv     | Create & export styleVariants        |
 | vke      | Create keyframe                      |
+| veke     | Create & export keyframe             |
 | vmq      | Create media query                   |
 | vse      | Create selectors                     |
 | vsc      | Create style composition             |
-| vus      | Use styles in className     |
+| vesc     | Create & export  style composition   |
+| vus      | Use styles in className              |
 | vsp      | Use sprinkles                        |
 
 ---
@@ -64,6 +68,15 @@ const $1 = style({
 ```
 
 ---
+### vesr [Create & export {style} rule]
+
+```js
+export const $1 = style({
+    $2: $3
+});
+```
+
+---
 ### vsv [Create {styleVariants}]
 
 ```js
@@ -75,10 +88,30 @@ const $1 = styleVariants({
 ```
 
 ---
+### vesv [Create & export {styleVariants}]
+
+```js
+export const $1 = styleVariants({
+  $2: {
+    $3: $4,
+  },
+});
+```
+
+---
 ### vke [Create {keyframes}]
 
 ```js
 const $1 = keyframes({
+    $2: $3
+});
+```
+
+---
+### veke [Create & export {keyframes}]
+
+```js
+export const $1 = keyframes({
     $2: $3
 });
 ```
@@ -110,6 +143,13 @@ selectors: {
 
 ```js
 const $1 = style([$2, { $3: $4 }]);
+```
+
+---
+### vesc [Create & export Style Composition]
+
+```js
+export const $1 = style([$2, { $3: $4 }]);
 ```
 
 ---
