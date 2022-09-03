@@ -23,7 +23,7 @@ After install this snippets add this inside your settings
 
 ---
 
-# ivs [Import {style}]
+### ivs [Import {style}]
 
 ```js
 import { style } from '@vanilla-extract/css';
@@ -31,28 +31,28 @@ import { style } from '@vanilla-extract/css';
 
 ---
 
-# ivsv [Import {styleVariants}]
+### ivsv [Import {styleVariants}]
 
 ```js
 import { styleVariants } from '@vanilla-extract/css';
 ```
 
 ---
-# ivk [Import {keyframes}]
+### ivk [Import {keyframes}]
 
 ```js
 import { keyframes } from '@vanilla-extract/css';
 ```
 
 ---
-# iva [Import * as styles from './[file].css]
+### iva [Import * as styles from './[file].css]
 
 ```js
 import * as styles from './${1:$TM_FILENAME_BASE}.css';
 ```
 
 ---
-# vsr [Create {style} rule]
+### vsr [Create {style} rule]
 
 ```js
 const $1 = style({
@@ -61,7 +61,7 @@ const $1 = style({
 ```
 
 ---
-# vsv [Create {styleVariants}]
+### vsv [Create {styleVariants}]
 
 ```js
 const $1 = styleVariants({
@@ -72,7 +72,7 @@ const $1 = styleVariants({
 ```
 
 ---
-# vke [Create {keyframes}]
+### vke [Create {keyframes}]
 
 ```js
 const $1 = keyframes({
@@ -81,7 +81,7 @@ const $1 = keyframes({
 ```
 
 ---
-# vmq [Create media query]
+### vmq [Create media query]
 
 ```js
 '@media': {
@@ -92,7 +92,7 @@ const $1 = keyframes({
 ```
 
 ---
-# vse [Create Selectors]
+### vse [Create Selectors]
 
 ```js
 selectors: {
@@ -103,21 +103,21 @@ selectors: {
 ```
 
 ---
-# vsc [Create Style Composition]
+### vsc [Create Style Composition]
 
 ```js
 const $1 = style([$2, { $3: $4 }]);
 ```
 
 ---
-# vus [Use imported styles in className]
+### vus [Use imported styles in className]
 
 ```js
 className={styles.$1}
 ```
 
 ---
-# vsp [Use sprinkles]
+### vsp [Use sprinkles]
 
 ```js
 className=sprinkle({
