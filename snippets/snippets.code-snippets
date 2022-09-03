@@ -1,10 +1,10 @@
 {
-    //imports
+    //.css.ts
     "Vanilla Extract Style Import": {
-      "scope": "javascript, typescript",
-      "prefix": "ivs",
-      "body": ["import { style } from '@vanilla-extract/css';"],
-      "description": "import { style } from '@vanilla-extract/css"
+        "scope": "javascript, typescript",
+        "prefix": "ivs",
+        "body": ["import { style } from '@vanilla-extract/css';"],
+        "description": "import { style } from '@vanilla-extract/css"
     },
     "Vanilla Extract StyleVariants Import": {
       "scope": "javascript, typescript",
@@ -17,12 +17,10 @@
       "prefix": "ivk",
       "body": ["import { keyframes } from '@vanilla-extract/css';"],
       "description": "import { keyframes } from '@vanilla-extract/css"
-    },
-  
-    //.css.ts
+    },  
     "Vanilla Extract Style Variable": {
       "scope": "javascript, typescript",
-      "prefix": "vsa",
+      "prefix": "vsr",
       "body": ["const $1 = style({", "\t$2: $3,", "});"],
       "description": "Creates a style rule with a locally scoped class name."
     },
@@ -43,7 +41,7 @@
       "prefix": "vmq",
       "body": [
         "'@media': {",
-        "\t'screen and (min-width: ${1:768px})': {",
+        "\t'screen and (min-width: ${1:768}px)': {",
         "\t\t$2: $3,",
         "\t},",
         "},"
@@ -58,7 +56,7 @@
     },
     "Vanilla Extract Style Composition": {
       "scope": "javascript, typescript",
-      "prefix": "vstc",
+      "prefix": "vsc",
       "body": ["const $1 = style([$2, { $3: $4 }]);"],
       "description": "Style composition makes it easy to re-use your styles."
     },
@@ -74,14 +72,14 @@
       "scope": "javascriptreact, typescriptreact",
       "prefix": "vus",
       "body": ["className={styles.$1}"],
-      "description": "import * as styles from './${1:$TM_FILENAME_BASE}.css';"
+      "description": "Use styles"
     },
   
     //shared
     "Vanilla Extract Sprinkles": {
       "scope": "javascript, typescript, javascriptreact, typescriptreact",
-      "prefix": "spk",
-      "body": ["className=sprinkles({", "\t$1", "})"],
+      "prefix": "vsp",
+      "body": ["className=sprinkles({", "\t$1: $2", "})"],
       "description": "className=sprinkles({$1,$2})"
     }
   }
