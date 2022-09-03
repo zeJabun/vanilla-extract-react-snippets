@@ -2,7 +2,7 @@
   "name": "vanilla-extract-react-snippets",
   "displayName": "Vanilla Extract React Snippets",
   "description": "Code snippets for Vanilla Extract with React",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -29,7 +29,21 @@
       }
     ]
   },
-  "author": {"name": "zeJabun"},
-  "repository": {"url": "https://github.com/zeJabun/vanilla-extract-react-snippets"},
-  "publisher": "Jabun"
+  "keywords": [
+    "React",
+    "Vanilla Extract",
+    "Vanilla Extract Snippets",
+    "React Snippets",
+    "vanilla-extract"
+  ],
+  "author": {
+    "name": "zeJabun",
+    "url": "https://twitter.com/_Jabun_"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeJabun/vanilla-extract-react-snippets"
+  },
+  "publisher": "Jabun",
+  "icon": "images/icon.png"
 }
