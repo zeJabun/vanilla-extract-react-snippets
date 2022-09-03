@@ -123,7 +123,7 @@ className={styles.$1}
 ### vsp [Use sprinkles]
 
 ```js
-className=sprinkle({
+className={sprinkles({
   $1: $2 
-})
+})}
 ```

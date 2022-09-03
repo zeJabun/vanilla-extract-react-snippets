@@ -79,8 +79,8 @@
     "Vanilla Extract Sprinkles": {
       "scope": "javascript, typescript, javascriptreact, typescriptreact",
       "prefix": "vsp",
-      "body": ["className=sprinkles({", "\t$1: $2", "})"],
-      "description": "className=sprinkles({$1,$2})"
+      "body": ["className={sprinkles({", "\t$1: $2,", "})}"],
+      "description": "className={sprinkles({$1:$2,})}"
     }
   }
   
