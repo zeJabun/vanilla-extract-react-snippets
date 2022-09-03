@@ -1,3 +1,6 @@
+Use the extension ID to find in VSC marketplace: Jabun.vanilla-extract-react-snippets
+https://marketplace.visualstudio.com/items?itemName=Jabun.vanilla-extract-react-snippets
+
 ## Usage
 
 After installation of this snippets, add this inside your settings
