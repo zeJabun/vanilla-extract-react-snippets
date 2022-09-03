@@ -2,7 +2,7 @@
   "name": "vanilla-extract-react-snippets",
   "displayName": "Vanilla Extract React Snippets",
   "description": "Code snippets for Vanilla Extract with React",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.71.0"
   },
