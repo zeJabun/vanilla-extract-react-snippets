@@ -18,5 +18,6 @@
     ]
   },
   "author": {"name": "zeJabun"},
-  "repository": {"url": "https://github.com/zeJabun/vanilla-extract-react-snippets"}
+  "repository": {"url": "https://github.com/zeJabun/vanilla-extract-react-snippets"},
+  "publisher": "Jabun"
 }
