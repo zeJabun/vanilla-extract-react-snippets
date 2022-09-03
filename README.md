@@ -1,6 +1,6 @@
 ## Usage
 
-After install this snippets add this inside your settings
+After installation of this snippets, add this inside your settings
 
 `"editor.snippetSuggestions": "top",`
 
@@ -124,5 +124,3 @@ className=sprinkle({
   $1: $2 
 })
 ```
-
----
