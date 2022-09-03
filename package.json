@@ -1,0 +1,20 @@
+{
+  "name": "vanilla-extract-react-snippets",
+  "displayName": "Vanilla Extract React Snippets",
+  "description": "Code snippets for Vanilla Extract with React",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript, typescript, typescriptreact, javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

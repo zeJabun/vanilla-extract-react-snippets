@@ -1,0 +1,88 @@
+{
+    //imports
+    "Vanilla Extract Style Import": {
+      "scope": "javascript, typescript",
+      "prefix": "ivs",
+      "body": ["import { style } from '@vanilla-extract/css';"],
+      "description": "import { style } from '@vanilla-extract/css"
+    },
+    "Vanilla Extract StyleVariants Import": {
+      "scope": "javascript, typescript",
+      "prefix": "ivsv",
+      "body": ["import { styleVariants } from '@vanilla-extract/css';"],
+      "description": "import { styleVariants } from '@vanilla-extract/css"
+    },
+    "Vanilla Extract keyframes Import": {
+      "scope": "javascript, typescript",
+      "prefix": "ivk",
+      "body": ["import { keyframes } from '@vanilla-extract/css';"],
+      "description": "import { keyframes } from '@vanilla-extract/css"
+    },
+  
+    //.css.ts
+    "Vanilla Extract Style Variable": {
+      "scope": "javascript, typescript",
+      "prefix": "vsa",
+      "body": ["const $1 = style({", "\t$2: $3,", "});"],
+      "description": "Creates a style rule with a locally scoped class name."
+    },
+    "Vanilla Extract StyleVariants": {
+      "scope": "javascript, typescript",
+      "prefix": "vsv",
+      "body": ["const $1 = styleVariants({", "\t${2:primary}: {", "\t\t$3: $4,", "\t},", "});"],
+      "description": "Creates a collection of named style rules."
+    },
+    "Vanilla Extract Keyframes": {
+      "scope": "javascript, typescript",
+      "prefix": "vke",
+      "body": ["const $1 = keyframes({", "\t$2: $3,", "});"],
+      "description": "Creates a locally scoped animation name for the defined @keyframes."
+    },
+    "Vanilla Extract Media Queries": {
+      "scope": "javascript, typescript",
+      "prefix": "vmq",
+      "body": [
+        "'@media': {",
+        "\t'screen and (min-width: ${1:768px})': {",
+        "\t\t$2: $3,",
+        "\t},",
+        "},"
+      ],
+      "description": "Embed media queries within your style definitions using the @media key."
+    },
+    "Vanilla Extract Selectors": {
+      "scope": "javascript, typescript",
+      "prefix": "vse",
+      "body": ["selectors: {", "\t'$1': {", "\t\t$2: $3,", "\t},", "},"],
+      "description": "Complex Selectors: More complex rules can be written using the selectors key."
+    },
+    "Vanilla Extract Style Composition": {
+      "scope": "javascript, typescript",
+      "prefix": "vstc",
+      "body": ["const $1 = style([$2, { $3: $4 }]);"],
+      "description": "Style composition makes it easy to re-use your styles."
+    },
+  
+    //react
+    "Vanilla Extract Import All Styles": {
+      "scope": "javascriptreact, typescriptreact",
+      "prefix": "iva",
+      "body": ["import * as styles from './${1:$TM_FILENAME_BASE}.css';"],
+      "description": "import * as styles from './${1:$TM_FILENAME_BASE}.css';"
+    },
+    "Vanilla Extract use class": {
+      "scope": "javascriptreact, typescriptreact",
+      "prefix": "vus",
+      "body": ["className={styles.$1}"],
+      "description": "import * as styles from './${1:$TM_FILENAME_BASE}.css';"
+    },
+  
+    //shared
+    "Vanilla Extract Sprinkles": {
+      "scope": "javascript, typescript, javascriptreact, typescriptreact",
+      "prefix": "spk",
+      "body": ["className=sprinkles({", "\t$1", "})"],
+      "description": "className=sprinkles({$1,$2})"
+    }
+  }
+  
