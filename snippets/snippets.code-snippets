@@ -45,13 +45,13 @@
     "Vanilla Extract Keyframes": {
       "scope": "javascript, typescript",
       "prefix": "vke",
-      "body": ["const $1 = keyframes({", "\t$2: $3,", "});"],
+      "body": ["const $1 = keyframes({", "\t'$2': {","\t\t$3: $4,", "\t},", "});"],
       "description": "Creates a locally scoped animation name for the defined @keyframes."
     },
     "Vanilla Extract Export Keyframes": {
       "scope": "javascript, typescript",
       "prefix": "veke",
-      "body": ["export const $1 = keyframes({", "\t$2: $3,", "});"],
+      "body": ["export const $1 = keyframes({", "\t'$2': {","\t\t$3: $4,", "\t},", "});"],
       "description": "Creates and exports a locally scoped animation name for the defined @keyframes."
     },
     "Vanilla Extract Media Queries": {

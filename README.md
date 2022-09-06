@@ -103,7 +103,9 @@ export const $1 = styleVariants({
 
 ```js
 const $1 = keyframes({
-    $2: $3
+    '$2': {
+      $3: $4,
+    },
 });
 ```
 
@@ -112,7 +114,9 @@ const $1 = keyframes({
 
 ```js
 export const $1 = keyframes({
-    $2: $3
+    '$2': {
+      $3: $4,
+    },
 });
 ```
 
